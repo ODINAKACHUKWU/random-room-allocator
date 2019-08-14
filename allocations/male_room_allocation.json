@@ -1,0 +1,26 @@
+{
+  "message": "These male fellows have been allocated to available rooms!",
+  "total": 20,
+  "data": [
+    { "name": "Andrew Phillips", "room": "Opal" },
+    { "name": "Oluwafemi Sule", "room": "Opal" },
+    { "name": "Dominic Walters", "room": "Opal" },
+    { "name": "Simon Patterson", "room": "Opal" },
+    { "name": "Caleb Wall", "room": "Topaz" },
+    { "name": "Sierra Travis", "room": "Topaz" },
+    { "name": "Alexandra Hartman", "room": "Topaz" },
+    { "name": "Arden Higgins", "room": "Topaz" },
+    { "name": "Inioluwa Fageyingbo", "room": "Silver" },
+    { "name": "Uzo Awili", "room": "Silver" },
+    { "name": "Timon Ramos", "room": "Silver" },
+    { "name": "Andrew Phillips", "room": "Silver" },
+    { "name": "Ross Gilbert", "room": "Gold" },
+    { "name": "Bright Young", "room": "Gold" },
+    { "name": "Okwukwe Ewurum", "room": "Gold" },
+    { "name": "Divine Chukwuemeka", "room": "Gold" },
+    { "name": "Efe Agare", "room": "Onyx" },
+    { "name": "Rasheed Ibidapo", "room": "Onyx" },
+    { "name": "Hyginus Chike", "room": "Onyx" },
+    { "name": "Anderson Joe", "room": "Onyx" }
+  ]
+}

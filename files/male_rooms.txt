@@ -1,0 +1,7 @@
+MALE ROOMS
+
+Topaz    4
+Silver   4
+Gold     4
+Onyx     4
+Opal     4

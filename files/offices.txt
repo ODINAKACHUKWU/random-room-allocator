@@ -1,0 +1,12 @@
+OFFICES
+
+Carat      6
+Anvil      6
+Crucible   6
+Kiln       6
+Forge      6
+Foundry    6
+Furnace    6
+Boiler     6
+Mint       6
+Vulcan     6

@@ -1,0 +1,26 @@
+{
+  "message": "These female fellows have been allocated to available rooms!",
+  "total": 20,
+  "data": [
+    { "name": "Iyanu Alimi", "room": "Pearl" },
+    { "name": "Doris Deleon", "room": "Pearl" },
+    { "name": "Selma Guera", "room": "Pearl" },
+    { "name": "Chastity Coffey", "room": "Pearl" },
+    { "name": "Quinn Barerar", "room": "Diamond" },
+    { "name": "Tanisha Mcfarland", "room": "Diamond" },
+    { "name": "Eden Vaughn", "room": "Diamond" },
+    { "name": "Hecto Dacey", "room": "Diamond" },
+    { "name": "Raya Byrd", "room": "Platinum" },
+    { "name": "Noel Valencia", "room": "Platinum" },
+    { "name": "Lateefat Amuda", "room": "Platinum" },
+    { "name": "Mary Mazi", "room": "Platinum" },
+    { "name": "Tiku Okoye", "room": "Ruby" },
+    { "name": "Amaka Juliet", "room": "Ruby" },
+    { "name": "Oluebube Princess", "room": "Ruby" },
+    { "name": "Adaku Mbamara", "room": "Ruby" },
+    { "name": "Cynthia Kabiri", "room": "Jade" },
+    { "name": "Chinonye Mbamara", "room": "Jade" },
+    { "name": "Onyinyechi Ode", "room": "Jade" },
+    { "name": "Chiamaka Eke", "room": "Jade" }
+  ]
+}
