@@ -1,5 +1,3 @@
-OFFICES
-
 Carat      6
 Anvil      6
 Crucible   6

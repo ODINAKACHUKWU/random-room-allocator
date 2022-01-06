@@ -1,5 +1,3 @@
-FEMALE ROOMS
-
 Ruby        4
 Platinum    4
 Jade        4
