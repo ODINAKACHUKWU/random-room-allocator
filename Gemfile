@@ -14,5 +14,12 @@ gem 'rake'
 # Gem needed to load environment variables
 gem 'dotenv'
 
-gem 'pry-byebug'
+gem 'activerecord'
+gem 'erb'
+gem 'yaml'
+
 gem 'json'
+
+group :development do
+  gem 'pry-byebug'
+end
