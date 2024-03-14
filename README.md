@@ -16,3 +16,19 @@ Random room allocator is an algorithm that randomly allocates offices and rooms 
   - female office allocation
   - unallocated staff
   - unallocated fellows
+
+## Notes:
+
+- Currently, it only reads text file and outputs json. Updates will be made later for it to read text, csv or json file and output text, csv or json.
+
+## How to use
+
+- Clone the repo.
+
+- Open a terminal and cd to the root directory.
+
+- Update the data in the text files within the `files` folder to have the employees to be allocated rooms and offices, male rooms, female rooms and offices to be allocated.
+
+- Run the app using the command `ruby app` on the terminal.
+
+- Open the `allocations` folder to see the allocation output.
