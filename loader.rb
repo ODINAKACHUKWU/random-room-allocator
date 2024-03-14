@@ -1,0 +1,5 @@
+require_relative 'contants'
+require_relative 'app/allocator'
+require_relative 'app/services/base'
+require_relative 'app/services/file_service'
+require_relative 'app/classes/errors/missing_input_folder_error'
