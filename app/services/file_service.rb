@@ -28,10 +28,28 @@ class FileService
         File.open(file_path, 'w') do |file|
           file.write JSON.generate([])
           puts "> #{file_path} added."
-        ensure
-          file.close
         end
       end
+    end
+
+    def add_to_file(file_path, data)
+      list = JSON.parse(File.read(file_path))
+
+      # Assign unique id to the data before pushing into the list
+      data.id = list.length + 1
+
+      # Push data into the list
+      list << data
+
+      # Convert list back to json
+      json_data = JSON.pretty_generate(list)
+
+      # Write the json data to the file
+      File.open(file_path, 'w') do |file|
+        file.write(json_data)
+      end
+
+      data
     end
   end
 end

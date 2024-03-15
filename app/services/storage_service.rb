@@ -4,11 +4,9 @@ STORAGE_FOLDER = 'tmp'
 LISTS = %w[employees rooms offices].freeze
 
 class StorageService
-  def initialize(table)
-    @table = table
+  def initialize(list)
+    @@list = list
   end
-
-  def connect; end
 
   class << self
     def setup
@@ -16,7 +14,20 @@ class StorageService
       create_storage_lists
     end
 
+    def connect(list)
+      new(list)
+      self
+    end
+
+    def add(data)
+      FileService.add_to_file(file_path, data)
+    end
+
     private
+
+    def file_path
+      File.join(STORAGE_FOLDER, "#{@@list}.json")
+    end
 
     def create_storage
       FileService.create_storage(path: STORAGE_FOLDER)

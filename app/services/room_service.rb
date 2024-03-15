@@ -16,10 +16,12 @@ class RoomService
 
   def extract_and_save_rooms
     @file_paths.each do |file_path|
-      puts "==> Extracting data from '#{file_path}'"
+      puts "==> Extracting data from '#{file_path}'..."
 
       rooms = FileService.extract_contents(file_path)
       save(rooms)
+
+      puts 'Done extracting.'
     end
   end
 
@@ -30,7 +32,7 @@ class RoomService
       name = room.split(' ').first
       capacity = room.split(' ').last.to_i
 
-      p '----- room', Room.create(name: name, capacity: capacity, gender_category: @gender_category)
+      Room.create(name: name, capacity: capacity, gender_category: @gender_category)
     end
   end
 end

@@ -7,7 +7,7 @@
 # gender_category: string, null: false
 # capacity: int, null: false
 
-TABLE = 'rooms'
+LIST = 'rooms'
 
 class Room < Base
   attr_accessor :id, :name, :gender_category, :capacity
@@ -17,16 +17,18 @@ class Room < Base
     @name = name
     @gender_category = gender_category
     @capacity = capacity
-    @storage = StorageService.new(TABLE)
   end
 
   class << self
     def table_name
-      TABLE
+      LIST
     end
 
     def create(name:, gender_category:, capacity:)
-      new(name: name, gender_category: gender_category, capacity: capacity)
+      room = new(name: name, gender_category: gender_category, capacity: capacity)
+
+      storage = StorageService.connect(LIST)
+      storage.add(room)
     end
   end
 end

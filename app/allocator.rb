@@ -262,7 +262,7 @@ class Allocator
     all_input_files = EMPLOYEES_INPUT_FILE + OFFICES_INPUT_FILE + FEMALE_ROOMS_INPUT_FILE + MALE_ROOMS_INPUT_FILE
     puts '==> Valid input files to read: ', all_input_files.uniq.sort
 
-    # RoomService.extract_data_from(FEMALE_ROOMS_INPUT_FILE, 'female')
+    RoomService.extract_data_from(FEMALE_ROOMS_INPUT_FILE, 'female')
     RoomService.extract_data_from(MALE_ROOMS_INPUT_FILE, 'male')
 
     # -> Get all data from files and store the data obtained in arrays of objects (employees, offices, and rooms respectively)
