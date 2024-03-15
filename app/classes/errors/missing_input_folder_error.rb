@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 module Errors
   class MissingInputFolderError < StandardError
-    def initialize(msg = "The folder containing input files is missing.")
+    def initialize(msg = 'The folder containing input files is missing.')
       super
     end
   end

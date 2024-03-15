@@ -1,11 +1,11 @@
+# frozen_string_literal: true
+
 class Base
   class << self
-    def find
+    def find; end
 
-    end
+    def where; end
 
-    def where
-
-    end
+    def create; end
   end
 end

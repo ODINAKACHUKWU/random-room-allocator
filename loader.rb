@@ -1,5 +1,24 @@
+# frozen_string_literal: true
+
+require 'json'
+
 require_relative 'contants'
 require_relative 'app/allocator'
-require_relative 'app/services/base'
+
+# Services
 require_relative 'app/services/file_service'
+require_relative 'app/services/room_service'
+require_relative 'app/services/storage_service'
+
+# Classes
 require_relative 'app/classes/errors/missing_input_folder_error'
+
+# Modules
+require_relative 'app/modules/file_readers/base'
+require_relative 'app/modules/file_readers/text'
+require_relative 'app/modules/file_readers/json'
+require_relative 'app/modules/file_readers/csv'
+
+# Models
+require_relative 'app/models/base'
+require_relative 'app/models/room'

@@ -1,4 +1,4 @@
-require_relative 'base'
+# frozen_string_literal: true
 
 # offices
 #
@@ -7,5 +7,4 @@ require_relative 'base'
 # capacity: int, null: false
 
 class Office < Base
-
 end

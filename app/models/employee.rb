@@ -1,8 +1,4 @@
-require_relative 'base'
-
-class Employee < Base
-
-end
+# frozen_string_literal: true
 
 # offices
 #
@@ -11,3 +7,6 @@ end
 # gender: string, null: false
 # employment_category: string, null: false
 # requires_accommodation: boolean, null: false, dafault: false
+
+class Employee < Base
+end

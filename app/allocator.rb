@@ -245,7 +245,7 @@
 
 class Allocator
   def initialize(output_type = 'json')
-    output_type = output_type
+    output_type
   end
 
   def self.run
@@ -257,11 +257,13 @@ class Allocator
     # -> Check presence of 'files' folder
     validate_presence_of_input_files_path
 
-
     # -> Read the input files
     puts '==> Reading input files...'
     all_input_files = EMPLOYEES_INPUT_FILE + OFFICES_INPUT_FILE + FEMALE_ROOMS_INPUT_FILE + MALE_ROOMS_INPUT_FILE
     puts '==> Valid input files to read: ', all_input_files.uniq.sort
+
+    # RoomService.extract_data_from(FEMALE_ROOMS_INPUT_FILE, 'female')
+    RoomService.extract_data_from(MALE_ROOMS_INPUT_FILE, 'male')
 
     # -> Get all data from files and store the data obtained in arrays of objects (employees, offices, and rooms respectively)
     # -> Assign all employees (staff and fellows) to available offices
@@ -272,6 +274,6 @@ class Allocator
   private
 
   def validate_presence_of_input_files_path
-    raise Errors::MissingInputFolderError if !File.directory?(INPUT_FILES_PATH)
+    raise Errors::MissingInputFolderError unless File.directory?(INPUT_FILES_PATH)
   end
 end
