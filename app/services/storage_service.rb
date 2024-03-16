@@ -20,7 +20,7 @@ class StorageService
     end
 
     def add(data)
-      FileService.add_to_file(file_path, data)
+      FileService.add_to_storage(file_path, data)
     end
 
     private

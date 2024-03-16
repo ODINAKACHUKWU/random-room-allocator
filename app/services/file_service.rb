@@ -26,30 +26,40 @@ class FileService
         file_path = File.join(path, "#{list}.json")
 
         File.open(file_path, 'w') do |file|
-          file.write JSON.generate([])
+          file.write(JSON.generate([]))
           puts "> #{file_path} added."
         end
       end
     end
 
-    def add_to_file(file_path, data)
-      list = JSON.parse(File.read(file_path))
-
-      # Assign unique id to the data before pushing into the list
-      data.id = list.length + 1
-
-      # Push data into the list
-      list << data
-
-      # Convert list back to json
-      json_data = JSON.pretty_generate(list)
-
-      # Write the json data to the file
-      File.open(file_path, 'w') do |file|
-        file.write(json_data)
-      end
-
+    def add_to_storage(file_path, data)
+      list = get_list_from_storage(file_path)
+      add_data_to_list(list, data)
+      add_list_to_storage(file_path, list)
       data
+    end
+
+    def assign_unique_id_to_data(list, data)
+      data.id = list.length + 1
+    end
+
+    def add_list_to_storage(file_path, list)
+      File.open(file_path, 'w') do |file|
+        file.write(convert_list_to_json(list))
+      end
+    end
+
+    def get_list_from_storage(file_path)
+      JSON.parse(File.read(file_path))
+    end
+
+    def add_data_to_list(list, data)
+      assign_unique_id_to_data(list, data)
+      list << data
+    end
+
+    def convert_list_to_json(list)
+      JSON.pretty_generate(list)
     end
   end
 end

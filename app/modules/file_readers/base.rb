@@ -3,7 +3,9 @@
 module FileReaders
   class Base
     def self.read(file_path)
-      raise NotImplementedError, "Subclasses must implement the 'read' method"
+      File.open(file_path, 'r') do |content|
+        File.readlines(content)
+      end
     end
   end
 end
