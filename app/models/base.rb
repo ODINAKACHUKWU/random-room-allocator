@@ -6,6 +6,14 @@ class Base
 
     def where; end
 
-    def create; end
+    def storage_list
+      raise NotImplementedError, 'Subclasses must implement storage_list method'
+    end
+
+    def create(**attributes)
+      item = new(**attributes)
+      storage = StorageService.connect(storage_list)
+      storage.add(item)
+    end
   end
 end

@@ -19,15 +19,7 @@ class Room < Base
     @capacity = capacity
   end
 
-  class << self
-    def storage_list
-      LIST
-    end
-
-    def create(name:, gender_category:, capacity:)
-      room = new(name: name, gender_category: gender_category, capacity: capacity)
-      storage = StorageService.connect(storage_list)
-      storage.add(room)
-    end
+  def self.storage_list
+    LIST
   end
 end
