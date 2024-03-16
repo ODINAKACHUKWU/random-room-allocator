@@ -6,9 +6,9 @@
 # name:  string, null: false
 # capacity: int, null: false
 
-LIST = 'offices'
-
 class Office < Base
+  LIST = 'offices'
+
   attr_accessor :id, :name, :capacity
 
   def initialize(id = nil, name:, capacity:)

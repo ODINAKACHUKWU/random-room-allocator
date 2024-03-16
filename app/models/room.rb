@@ -7,9 +7,9 @@
 # gender_category: string, null: false
 # capacity: int, null: false
 
-LIST = 'rooms'
-
 class Room < Base
+  LIST = 'rooms'
+
   attr_accessor :id, :name, :gender_category, :capacity
 
   def initialize(id = nil, name:, gender_category:, capacity:)
