@@ -8,6 +8,7 @@ require_relative 'contants'
 require_relative 'app/allocator'
 
 # Services
+require_relative 'app/services/base'
 require_relative 'app/services/file_service'
 require_relative 'app/services/room_service'
 require_relative 'app/services/storage_service'

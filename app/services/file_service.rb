@@ -39,6 +39,8 @@ class FileService
       data
     end
 
+    private
+
     def assign_unique_id_to_data(list, data)
       data.id = list.length + 1
     end
