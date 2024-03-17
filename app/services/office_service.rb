@@ -7,11 +7,11 @@ class OfficeService
 
   class << self
     def extract_data_from(file_paths)
-      new(file_paths).extract_and_save_rooms
+      new(file_paths).extract_and_save_offices
     end
   end
 
-  def extract_and_save_rooms
+  def extract_and_save_offices
     @file_paths.each do |file_path|
       puts "==> Extracting data from '#{file_path}'..."
 

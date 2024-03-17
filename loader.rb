@@ -12,9 +12,11 @@ require_relative 'app/services/file_service'
 require_relative 'app/services/room_service'
 require_relative 'app/services/storage_service'
 require_relative 'app/services/office_service'
+require_relative 'app/services/employee_service'
 
 # Classes
 require_relative 'app/classes/errors/missing_input_folder_error'
+require_relative 'app/classes/errors/invalid_file_extension_error'
 
 # Modules
 require_relative 'app/modules/file_readers/base'

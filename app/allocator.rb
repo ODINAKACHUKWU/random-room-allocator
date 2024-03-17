@@ -265,6 +265,7 @@ class Allocator
     RoomService.extract_data_from(FEMALE_ROOMS_INPUT_FILE, 'female')
     RoomService.extract_data_from(MALE_ROOMS_INPUT_FILE, 'male')
     OfficeService.extract_data_from(OFFICES_INPUT_FILE)
+    EmployeeService.extract_data_from(EMPLOYEES_INPUT_FILE)
 
     # -> Get all data from files and store the data obtained in arrays of objects (employees, offices, and rooms respectively)
     # -> Assign all employees (staff and fellows) to available offices
